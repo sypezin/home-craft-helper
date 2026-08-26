@@ -52,10 +52,12 @@ function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
-        <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="#topo" className="flex items-center gap-3">
-            <img src={logo} alt="Logotipo Otimizare" className="h-9 w-9 rounded-sm" />
-            <span className="font-display text-xl tracking-[0.3em] text-sand">OTIMIZARE</span>
+        <nav className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 sm:px-6 sm:py-4 md:flex md:justify-between">
+          <a href="#topo" className="flex min-w-0 items-center gap-2 sm:gap-3">
+            <img src={logo} alt="Logotipo Otimizare" className="h-8 w-8 shrink-0 rounded-sm sm:h-9 sm:w-9" />
+            <span className="truncate font-display text-base tracking-[0.2em] text-sand sm:text-xl sm:tracking-[0.3em]">
+              OTIMIZARE
+            </span>
           </a>
           <div className="hidden items-center gap-9 text-sm text-muted-foreground md:flex">
             <a className="transition-colors hover:text-primary" href="#projetos">Projetos</a>
@@ -64,12 +66,13 @@ function Index() {
           </div>
           <a
             href={WHATSAPP}
-            className="rounded-full border border-primary/60 px-5 py-2 text-xs tracking-[0.2em] text-primary uppercase transition-colors hover:bg-primary hover:text-primary-foreground"
+            className="shrink-0 whitespace-nowrap rounded-full border border-primary/60 px-3.5 py-2 text-[10px] tracking-[0.15em] text-primary uppercase transition-colors hover:bg-primary hover:text-primary-foreground sm:px-5 sm:text-xs sm:tracking-[0.2em]"
           >
             Orçamento
           </a>
         </nav>
       </header>
+
 
       <main id="topo">
         {/* Hero */}
