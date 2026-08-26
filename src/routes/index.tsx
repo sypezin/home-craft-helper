@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
-import logo from "@/assets/logo-transparent.png.asset.json";
-import heroHd from "@/assets/hero-hd.jpg.asset.json";
-import kitchen1 from "@/assets/image-2.png.asset.json";
-import kitchen2 from "@/assets/image-3.png.asset.json";
-import kitchen3 from "@/assets/image-4.png.asset.json";
-import living1 from "@/assets/image-5.png.asset.json";
-import living2 from "@/assets/image-6.png.asset.json";
-import kitchen4 from "@/assets/image-7.png.asset.json";
+import logo from "@/assets/logo-transparent.png";
+import heroHd from "@/assets/hero-hd.png";
+import kitchen1 from "@/assets/image-2.png";
+import kitchen2 from "@/assets/image-3.png";
+import kitchen3 from "@/assets/image-4.png";
+import living1 from "@/assets/image-5.png";
+import living2 from "@/assets/image-6.png";
+import kitchen4 from "@/assets/image-7.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,12 +33,12 @@ const WHATSAPP = "https://wa.me/555197893210";
 const PHONE_LABEL = "+55 51 9789-3210";
 
 const projetos = [
-  { src: kitchen1.url, title: "Cozinha Carvalho", tag: "Cozinha integrada" },
-  { src: kitchen2.url, title: "Ilha Ripada", tag: "Cozinha gourmet" },
-  { src: living1.url, title: "Painel Luz Quente", tag: "Home theater" },
-  { src: kitchen3.url, title: "Provençal Areia", tag: "Cozinha clássica" },
-  { src: living2.url, title: "Living Vertical", tag: "Sala de estar" },
-  { src: kitchen4.url, title: "Azul Profundo", tag: "Cozinha assinada" },
+  { src: kitchen1, title: "Cozinha Carvalho", tag: "Cozinha integrada" },
+  { src: kitchen2, title: "Ilha Ripada", tag: "Cozinha gourmet" },
+  { src: living1, title: "Painel Luz Quente", tag: "Home theater" },
+  { src: kitchen3, title: "Provençal Areia", tag: "Cozinha clássica" },
+  { src: living2, title: "Living Vertical", tag: "Sala de estar" },
+  { src: kitchen4, title: "Azul Profundo", tag: "Cozinha assinada" },
 ];
 
 const etapas = [
@@ -54,7 +54,7 @@ function Index() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#topo" className="flex items-center gap-3">
-            <img src={logo.url} alt="Logotipo Otimizare" className="h-9 w-9 rounded-sm" />
+            <img src={logo} alt="Logotipo Otimizare" className="h-9 w-9 rounded-sm" />
             <span className="font-display text-xl tracking-[0.3em] text-sand">OTIMIZARE</span>
           </a>
           <div className="hidden items-center gap-9 text-sm text-muted-foreground md:flex">
@@ -75,7 +75,7 @@ function Index() {
         {/* Hero */}
         <section className="relative flex min-h-screen items-end overflow-hidden">
           <img
-            src={heroHd.url}
+            src={heroHd}
             alt="Cozinha planejada em madeira com bancada e banquetas"
             className="absolute inset-0 h-full w-full object-cover"
           />
@@ -240,7 +240,7 @@ function Index() {
       <footer className="border-t border-border py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 text-center md:flex-row md:justify-between md:text-left">
           <div className="flex items-center gap-3">
-            <img src={logo.url} alt="" className="h-7 w-7" />
+            <img src={logo} alt="" className="h-7 w-7" />
             <span className="font-display tracking-[0.3em] text-sand">OTIMIZARE</span>
           </div>
           <p className="text-xs tracking-wide text-muted-foreground">
