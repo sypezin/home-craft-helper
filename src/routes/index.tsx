@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import logo from "@/assets/logo-transparent.png";
-import heroHd from "@/assets/hero-hd.png";
+import heroHd from "@/assets/hero-hd.jpg";
 import kitchen1 from "@/assets/image-2.png";
 import kitchen2 from "@/assets/image-3.png";
 import kitchen3 from "@/assets/image-4.png";
