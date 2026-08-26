@@ -125,18 +125,19 @@ function Index() {
               home theaters, closets e ambientes comerciais. Nada de solução pronta:
               cada peça é desenhada, produzida e instalada para o seu ambiente.
             </p>
-            <div className="grid grid-cols-3 gap-6 border-t border-border pt-8">
+            <div className="grid grid-cols-3 gap-3 border-t border-border pt-6 sm:gap-6 sm:pt-8">
               {[
                 ["7", "anos de marcenaria"],
                 ["100%", "projetos sob medida"],
                 ["3D", "projeto antes de produzir"],
               ].map(([k, v]) => (
-                <div key={v}>
-                  <p className="font-display text-3xl text-primary">{k}</p>
-                  <p className="mt-1 text-xs tracking-wide text-muted-foreground">{v}</p>
+                <div key={v} className="min-w-0">
+                  <p className="font-display text-2xl text-primary sm:text-3xl">{k}</p>
+                  <p className="mt-1 text-[11px] leading-snug tracking-wide text-muted-foreground sm:text-xs">{v}</p>
                 </div>
               ))}
             </div>
+
           </Reveal>
         </section>
 
