@@ -52,10 +52,12 @@ function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
-        <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="#topo" className="flex items-center gap-3">
-            <img src={logo} alt="Logotipo Otimizare" className="h-9 w-9 rounded-sm" />
-            <span className="font-display text-xl tracking-[0.3em] text-sand">OTIMIZARE</span>
+        <nav className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 sm:px-6 sm:py-4 md:flex md:justify-between">
+          <a href="#topo" className="flex min-w-0 items-center gap-2 sm:gap-3">
+            <img src={logo} alt="Logotipo Otimizare" className="h-8 w-8 shrink-0 rounded-sm sm:h-9 sm:w-9" />
+            <span className="truncate font-display text-base tracking-[0.2em] text-sand sm:text-xl sm:tracking-[0.3em]">
+              OTIMIZARE
+            </span>
           </a>
           <div className="hidden items-center gap-9 text-sm text-muted-foreground md:flex">
             <a className="transition-colors hover:text-primary" href="#projetos">Projetos</a>
@@ -64,16 +66,17 @@ function Index() {
           </div>
           <a
             href={WHATSAPP}
-            className="rounded-full border border-primary/60 px-5 py-2 text-xs tracking-[0.2em] text-primary uppercase transition-colors hover:bg-primary hover:text-primary-foreground"
+            className="shrink-0 whitespace-nowrap rounded-full border border-primary/60 px-3.5 py-2 text-[10px] tracking-[0.15em] text-primary uppercase transition-colors hover:bg-primary hover:text-primary-foreground sm:px-5 sm:text-xs sm:tracking-[0.2em]"
           >
             Orçamento
           </a>
         </nav>
       </header>
 
+
       <main id="topo">
         {/* Hero */}
-        <section className="relative flex min-h-screen items-end overflow-hidden">
+        <section className="relative flex min-h-[100svh] items-end overflow-hidden">
           <img
             src={heroHd}
             alt="Cozinha planejada em madeira com bancada e banquetas"
@@ -122,18 +125,19 @@ function Index() {
               home theaters, closets e ambientes comerciais. Nada de solução pronta:
               cada peça é desenhada, produzida e instalada para o seu ambiente.
             </p>
-            <div className="grid grid-cols-3 gap-6 border-t border-border pt-8">
+            <div className="grid grid-cols-3 gap-3 border-t border-border pt-6 sm:gap-6 sm:pt-8">
               {[
                 ["7", "anos de marcenaria"],
                 ["100%", "projetos sob medida"],
                 ["3D", "projeto antes de produzir"],
               ].map(([k, v]) => (
-                <div key={v}>
-                  <p className="font-display text-3xl text-primary">{k}</p>
-                  <p className="mt-1 text-xs tracking-wide text-muted-foreground">{v}</p>
+                <div key={v} className="min-w-0">
+                  <p className="font-display text-2xl text-primary sm:text-3xl">{k}</p>
+                  <p className="mt-1 text-[11px] leading-snug tracking-wide text-muted-foreground sm:text-xs">{v}</p>
                 </div>
               ))}
             </div>
+
           </Reveal>
         </section>
 
@@ -151,7 +155,7 @@ function Index() {
               </p>
             </Reveal>
 
-            <div className="mt-14 grid gap-5 md:grid-cols-3">
+            <div className="mt-10 grid gap-5 md:mt-14 md:grid-cols-3">
               {projetos.map((p, i) => (
                 <Reveal key={p.title} delay={(i % 3) * 120}>
                   <figure className="group relative overflow-hidden rounded-sm border border-border">
@@ -159,16 +163,17 @@ function Index() {
                       src={p.src}
                       alt={`${p.title} — ${p.tag} da Otimizare`}
                       loading="lazy"
-                      className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02]"
+                      className="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-[1.02] sm:h-72 md:h-auto"
                     />
-                    <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background to-transparent p-5">
+                    <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/85 to-transparent p-4 pt-12 sm:p-5 sm:pt-14">
                       <p className="label-caps">{p.tag}</p>
-                      <p className="mt-1 font-display text-2xl text-sand">{p.title}</p>
+                      <p className="mt-1 font-display text-xl text-sand sm:text-2xl">{p.title}</p>
                     </figcaption>
                   </figure>
                 </Reveal>
               ))}
             </div>
+
           </div>
         </section>
 
@@ -180,14 +185,15 @@ function Index() {
               Do primeiro esboço à última dobradiça.
             </h2>
           </Reveal>
-          <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-border bg-border md:grid-cols-4">
+          <div className="mt-10 grid gap-px overflow-hidden rounded-sm border border-border bg-border md:mt-14 md:grid-cols-4">
             {etapas.map((e, i) => (
               <Reveal key={e.n} delay={i * 120} className="h-full">
-                <div className="h-full bg-background p-8 transition-colors hover:bg-card">
-                  <p className="font-display text-4xl text-primary">{e.n}</p>
-                  <h3 className="mt-4 text-xl text-sand">{e.t}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{e.d}</p>
+                <div className="h-full bg-background p-6 transition-colors hover:bg-card sm:p-8">
+                  <p className="font-display text-3xl text-primary sm:text-4xl">{e.n}</p>
+                  <h3 className="mt-3 text-lg text-sand sm:mt-4 sm:text-xl">{e.t}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:mt-3">{e.d}</p>
                 </div>
+
               </Reveal>
             ))}
           </div>
