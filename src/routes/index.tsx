@@ -76,7 +76,7 @@ function Index() {
 
       <main id="topo">
         {/* Hero */}
-        <section className="relative flex min-h-screen items-end overflow-hidden">
+        <section className="relative flex min-h-[100svh] items-end overflow-hidden">
           <img
             src={heroHd}
             alt="Cozinha planejada em madeira com bancada e banquetas"
