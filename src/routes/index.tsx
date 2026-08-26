@@ -185,14 +185,15 @@ function Index() {
               Do primeiro esboço à última dobradiça.
             </h2>
           </Reveal>
-          <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-border bg-border md:grid-cols-4">
+          <div className="mt-10 grid gap-px overflow-hidden rounded-sm border border-border bg-border md:mt-14 md:grid-cols-4">
             {etapas.map((e, i) => (
               <Reveal key={e.n} delay={i * 120} className="h-full">
-                <div className="h-full bg-background p-8 transition-colors hover:bg-card">
-                  <p className="font-display text-4xl text-primary">{e.n}</p>
-                  <h3 className="mt-4 text-xl text-sand">{e.t}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{e.d}</p>
+                <div className="h-full bg-background p-6 transition-colors hover:bg-card sm:p-8">
+                  <p className="font-display text-3xl text-primary sm:text-4xl">{e.n}</p>
+                  <h3 className="mt-3 text-lg text-sand sm:mt-4 sm:text-xl">{e.t}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:mt-3">{e.d}</p>
                 </div>
+
               </Reveal>
             ))}
           </div>
