@@ -155,7 +155,7 @@ function Index() {
               </p>
             </Reveal>
 
-            <div className="mt-14 grid gap-5 md:grid-cols-3">
+            <div className="mt-10 grid gap-5 md:mt-14 md:grid-cols-3">
               {projetos.map((p, i) => (
                 <Reveal key={p.title} delay={(i % 3) * 120}>
                   <figure className="group relative overflow-hidden rounded-sm border border-border">
@@ -163,16 +163,17 @@ function Index() {
                       src={p.src}
                       alt={`${p.title} — ${p.tag} da Otimizare`}
                       loading="lazy"
-                      className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02]"
+                      className="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-[1.02] sm:h-72 md:h-auto"
                     />
-                    <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background to-transparent p-5">
+                    <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/85 to-transparent p-4 pt-12 sm:p-5 sm:pt-14">
                       <p className="label-caps">{p.tag}</p>
-                      <p className="mt-1 font-display text-2xl text-sand">{p.title}</p>
+                      <p className="mt-1 font-display text-xl text-sand sm:text-2xl">{p.title}</p>
                     </figcaption>
                   </figure>
                 </Reveal>
               ))}
             </div>
+
           </div>
         </section>
 
