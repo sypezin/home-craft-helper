@@ -145,8 +145,7 @@ function Index() {
               <em className="italic text-primary">projetado para você</em>.
             </h1>
             <p className="animate-rise mt-6 max-w-xl text-base text-muted-foreground md:text-lg">
-              A Otimizare desenha e fabrica móveis sob medida que unem madeira,
-              luz e função — do projeto à instalação final.
+              Design, precisão e exclusividade em cada detalhe.
             </p>
             <div className="animate-rise mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-4">
               <a
