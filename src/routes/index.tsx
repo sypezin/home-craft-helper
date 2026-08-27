@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import logo from "@/assets/logo-transparent.png";
+import logoWordmark from "@/assets/logo-wordmark.png";
 import heroHd from "@/assets/hero-hd.jpg";
 import kitchen1 from "@/assets/image-2.png";
 import kitchen2 from "@/assets/image-3.png";
@@ -109,10 +110,7 @@ function Index() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
         <nav className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 sm:px-6 sm:py-4 md:flex md:justify-between">
           <a href="#topo" className="flex min-w-0 items-center gap-2 sm:gap-3">
-            <img src={logo} alt="Logotipo Otimizare" className="h-8 w-8 shrink-0 rounded-sm sm:h-9 sm:w-9" />
-            <span className="truncate font-display text-base tracking-[0.2em] text-sand sm:text-xl sm:tracking-[0.3em]">
-              OTIMIZARE
-            </span>
+            <img src={logoWordmark} alt="Otimizare — Móveis sob medida" className="h-7 w-auto shrink-0 sm:h-9" />
           </a>
           <div className="hidden items-center gap-9 text-sm text-muted-foreground md:flex">
             <a className="transition-colors hover:text-primary" href="#projetos">Projetos</a>
