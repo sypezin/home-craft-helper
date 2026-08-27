@@ -78,12 +78,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "google-site-verification", content: "xM8KTHO97eODVSwXjQ_fSUZTXOdmrRfYyanBxPd-uVI" },
-      { title: "Otimizare | Móveis sob medida" },
-      {
-        name: "description",
-        content:
-          "Otimizare projeta e fabrica móveis planejados sob medida em Harmonia e região.",
-      },
       { name: "author", content: "Otimizare" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
