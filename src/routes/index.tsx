@@ -60,6 +60,7 @@ export const Route = createFileRoute("/")({
           ],
           sameAs: [
             "https://wa.me/555197893210",
+            "https://maps.app.goo.gl/8uKxgtFM2FaahStN6",
           ],
         }),
       },
