@@ -229,6 +229,67 @@ function Index() {
           </div>
         </section>
 
+        {/* Propósito */}
+        <section className="scroll-mt-20 border-y border-border bg-card/30 py-16 md:py-28">
+          <div className="mx-auto max-w-6xl px-5 sm:px-6">
+            <Reveal>
+              <p className="label-caps">Propósito</p>
+              <h2 className="mt-4 text-3xl md:text-5xl">O que nos guia em cada projeto</h2>
+            </Reveal>
+
+            <div className="mt-10 grid gap-5 md:mt-14 md:grid-cols-2">
+              <Reveal className="h-full">
+                <article className="h-full rounded-sm border border-border bg-background p-6 transition-colors hover:bg-card sm:p-8">
+                  <p className="label-caps">Missão</p>
+                  <h3 className="mt-3 text-2xl text-sand md:text-3xl">Entregar com excelência</h3>
+                  <p className="mt-3 leading-relaxed text-muted-foreground">
+                    Entregar móveis sob medida com excelência, inovação e qualidade,
+                    transformando projetos em ambientes que unem conforto, funcionalidade e
+                    satisfação para nossos clientes.
+                  </p>
+                </article>
+              </Reveal>
+              <Reveal delay={120} className="h-full">
+                <article className="h-full rounded-sm border border-border bg-background p-6 transition-colors hover:bg-card sm:p-8">
+                  <p className="label-caps">Visão</p>
+                  <h3 className="mt-3 text-2xl text-sand md:text-3xl">Ser referência</h3>
+                  <p className="mt-3 leading-relaxed text-muted-foreground">
+                    Ser uma empresa de excelência no mercado de móveis sob medida,
+                    reconhecida por transformar ambientes em espaços otimizados,
+                    sofisticados e confortáveis, proporcionando uma experiência
+                    diferenciada para toda a família.
+                  </p>
+                </article>
+              </Reveal>
+            </div>
+
+            <div className="mt-10 md:mt-14">
+              <Reveal>
+                <p className="label-caps">Valores</p>
+              </Reveal>
+              <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 md:gap-5">
+                {[
+                  "Excelência",
+                  "Qualidade",
+                  "Inovação",
+                  "Compromisso",
+                  "Responsabilidade",
+                  "Transparência",
+                ].map((valor, i) => (
+                  <Reveal key={valor} delay={i * 80}>
+                    <div className="flex items-center gap-3 rounded-sm border border-border bg-background px-4 py-4 transition-colors hover:bg-card sm:px-5">
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-medium text-primary">
+                        {valor[0]}
+                      </span>
+                      <span className="font-display text-base text-sand sm:text-lg">{valor}</span>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Processo */}
         <section id="processo" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-16 sm:px-6 md:py-28">
           <Reveal>
