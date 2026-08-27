@@ -24,6 +24,7 @@ export const Route = createFileRoute("/")({
         content:
           "Móveis planejados sob medida em Harmonia e região. Projetos que unem madeira, luz e função, do projeto à instalação final.",
       },
+      { property: "og:url", content: "https://www.otimizaremoveis.com.br" },
       { property: "og:locale", content: "pt_BR" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -32,6 +33,28 @@ export const Route = createFileRoute("/")({
         name: "twitter:description",
         content:
           "Móveis planejados sob medida em Harmonia e região, do projeto à instalação final.",
+      },
+    ],
+    links: [
+      { rel: "canonical", href: "https://www.otimizaremoveis.com.br" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Otimizare",
+          url: "https://www.otimizaremoveis.com.br",
+          telephone: "+555197893210",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Rua Arthur Rech, 61 — Bairro Morro Azul",
+            addressLocality: "Harmonia",
+            addressRegion: "RS",
+            addressCountry: "BR",
+          },
+        }),
       },
     ],
   }),

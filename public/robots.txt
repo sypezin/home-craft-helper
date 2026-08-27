@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://home-craft-helper.lovable.app/sitemap.xml
+Sitemap: https://www.otimizaremoveis.com.br/sitemap.xml
