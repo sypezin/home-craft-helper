@@ -43,7 +43,7 @@ export const Route = createFileRoute("/")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organization",
+          "@type": "LocalBusiness",
           name: "Otimizare",
           url: "https://www.otimizaremoveis.com.br",
           telephone: "+555197893210",
@@ -54,6 +54,28 @@ export const Route = createFileRoute("/")({
             addressRegion: "RS",
             addressCountry: "BR",
           },
+          areaServed: [
+            { "@type": "City", name: "Harmonia", addressRegion: "RS", addressCountry: "BR" },
+            { "@type": "Place", name: "Bairro Morro Azul", containedInPlace: { "@type": "City", name: "Harmonia" } },
+          ],
+          sameAs: [
+            "https://wa.me/555197893210",
+          ],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          serviceType: "Móveis planejados sob medida",
+          provider: { "@type": "LocalBusiness", name: "Otimizare", url: "https://www.otimizaremoveis.com.br" },
+          areaServed: [
+            { "@type": "City", name: "Harmonia", addressRegion: "RS", addressCountry: "BR" },
+            { "@type": "Place", name: "Bairro Morro Azul", containedInPlace: { "@type": "City", name: "Harmonia" } },
+          ],
+          description:
+            "Cozinhas, dormitórios, home theaters, closets e ambientes comerciais projetados, fabricados e instalados sob medida em Harmonia e região.",
         }),
       },
     ],
