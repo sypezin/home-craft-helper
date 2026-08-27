@@ -127,7 +127,7 @@ function Index() {
             </p>
             <div className="grid grid-cols-3 gap-3 border-t border-border pt-6 sm:gap-6 sm:pt-8">
               {[
-                ["7", "anos de marcenaria"],
+                ["8+", "anos de empresa"],
                 ["100%", "projetos sob medida"],
                 ["3D", "projeto antes de produzir"],
               ].map(([k, v]) => (
