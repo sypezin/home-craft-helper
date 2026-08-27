@@ -24,6 +24,15 @@ export const Route = createFileRoute("/")({
         content:
           "Móveis planejados sob medida em Harmonia e região. Projetos que unem madeira, luz e função, do projeto à instalação final.",
       },
+      { property: "og:locale", content: "pt_BR" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Otimizare | Móveis sob medida" },
+      {
+        name: "twitter:description",
+        content:
+          "Móveis planejados sob medida em Harmonia e região, do projeto à instalação final.",
+      },
     ],
   }),
   component: Index,
