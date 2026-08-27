@@ -174,7 +174,7 @@ function Index() {
           <Reveal delay={150} className="space-y-6 text-muted-foreground">
             <p className="text-base leading-relaxed md:text-lg">
               Trabalhamos com marcenaria de alto padrão para cozinhas, dormitórios,
-              home theaters, closets e ambientes comerciais. Nada de solução pronta:
+              salas de estar, closets e ambientes comerciais. Nada de solução pronta:
               cada peça é desenhada, produzida e instalada para o seu ambiente.
             </p>
             <div className="grid grid-cols-3 gap-3 border-t border-border pt-6 sm:gap-6 sm:pt-8">
