@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
         content:
           "Móveis planejados sob medida em Harmonia e região. Projetos que unem madeira, luz e função, do projeto à instalação final.",
       },
-      { property: "og:url", content: "https://home-craft-helper.lovable.app" },
+      { property: "og:url", content: "https://www.otimizaremoveis.com.br" },
       { property: "og:locale", content: "pt_BR" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/")({
       },
     ],
     links: [
-      { rel: "canonical", href: "https://home-craft-helper.lovable.app" },
+      { rel: "canonical", href: "https://www.otimizaremoveis.com.br" },
     ],
     scripts: [
       {
@@ -45,7 +45,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           name: "Otimizare",
-          url: "https://home-craft-helper.lovable.app",
+          url: "https://www.otimizaremoveis.com.br",
           telephone: "+555197893210",
           address: {
             "@type": "PostalAddress",
@@ -70,7 +70,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Service",
           serviceType: "Móveis planejados sob medida",
-          provider: { "@type": "LocalBusiness", name: "Otimizare", url: "https://home-craft-helper.lovable.app" },
+          provider: { "@type": "LocalBusiness", name: "Otimizare", url: "https://www.otimizaremoveis.com.br" },
           areaServed: [
             { "@type": "City", name: "Harmonia", addressRegion: "RS", addressCountry: "BR" },
             { "@type": "Place", name: "Bairro Morro Azul", containedInPlace: { "@type": "City", name: "Harmonia" } },
