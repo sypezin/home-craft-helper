@@ -119,9 +119,12 @@ function Index() {
           </div>
           <a
             href={WHATSAPP}
-            className="shrink-0 whitespace-nowrap rounded-full border border-primary/60 px-3.5 py-2 text-[10px] tracking-[0.15em] text-primary uppercase transition-colors hover:bg-primary hover:text-primary-foreground sm:px-5 sm:text-xs sm:tracking-[0.2em]"
+            className="relative shrink-0 overflow-hidden whitespace-nowrap rounded-full border border-primary/60 px-3.5 py-2 text-[10px] tracking-[0.15em] text-primary uppercase transition-colors hover:bg-primary hover:text-primary-foreground sm:px-5 sm:text-xs sm:tracking-[0.2em]"
           >
-            Orçamento
+            <div className="pointer-events-none absolute inset-0">
+              <div className="shimmer-sweep absolute -left-1/2 top-0 h-full w-1/2 bg-linear-to-r from-transparent via-sand/25 to-transparent" />
+            </div>
+            <span className="relative z-10">Orçamento</span>
           </a>
         </nav>
       </header>
